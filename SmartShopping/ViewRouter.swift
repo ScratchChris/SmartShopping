@@ -12,13 +12,13 @@ import CoreData
 class ViewRouter: ObservableObject {
 	@Environment(\.managedObjectContext) var moc
 	 
-	@Published var currentPage: Page = .home
+	@Published var currentPage: Page = .list
 	
 }
 
 enum Page {
-		 case home
-		 case liked
-		 case records
-		 case user
+		 case list
+		 case meals
+		 case locations
+		 case settings
  }

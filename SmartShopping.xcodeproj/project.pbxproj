@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E13916C72678D46F0008C8FB /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13916C62678D46F0008C8FB /* ViewRouter.swift */; };
+		E13916C92678E0A70008C8FB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13916C82678E0A70008C8FB /* ListView.swift */; };
 		E1B78CA72677929E00DD6EDB /* SmartShoppingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */; };
 		E1B78CA92677929E00DD6EDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CA82677929E00DD6EDB /* ContentView.swift */; };
 		E1B78CAB267792A000DD6EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B78CAA267792A000DD6EDB /* Assets.xcassets */; };
 		E1B78CAE267792A000DD6EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B78CAD267792A000DD6EDB /* Preview Assets.xcassets */; };
 		E1B78CB0267792A000DD6EDB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CAF267792A000DD6EDB /* Persistence.swift */; };
 		E1B78CB3267792A000DD6EDB /* SmartShopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */; };
+		E1CE6F922678E3870080D98D /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F912678E3870080D98D /* MealView.swift */; };
+		E1CE6F942678E6950080D98D /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F932678E6950080D98D /* LocationView.swift */; };
+		E1CE6F962678E6A10080D98D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F952678E6A10080D98D /* SettingsView.swift */; };
+		E1CE6F992678ECB50080D98D /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F982678ECB50080D98D /* AddLocationView.swift */; };
+		E1CE6F9B2678ECC00080D98D /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F9A2678ECBF0080D98D /* AddItemView.swift */; };
+		E1CE6F9D2678ECCE0080D98D /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F9C2678ECCE0080D98D /* AddMealView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E13916C62678D46F0008C8FB /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		E13916C82678E0A70008C8FB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E1B78CA32677929E00DD6EDB /* SmartShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShoppingApp.swift; sourceTree = "<group>"; };
 		E1B78CA82677929E00DD6EDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +33,12 @@
 		E1B78CAD267792A000DD6EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1B78CAF267792A000DD6EDB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E1B78CB2267792A000DD6EDB /* SmartShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartShopping.xcdatamodel; sourceTree = "<group>"; };
+		E1CE6F912678E3870080D98D /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
+		E1CE6F932678E6950080D98D /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		E1CE6F952678E6A10080D98D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E1CE6F982678ECB50080D98D /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
+		E1CE6F9A2678ECBF0080D98D /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		E1CE6F9C2678ECCE0080D98D /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */,
-				E1B78CA82677929E00DD6EDB /* ContentView.swift */,
 				E13916C62678D46F0008C8FB /* ViewRouter.swift */,
-				E1B78CAA267792A000DD6EDB /* Assets.xcassets */,
-				E1B78CAF267792A000DD6EDB /* Persistence.swift */,
-				E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */,
+				E1CE6F8F2678E3510080D98D /* Views */,
+				E1CE6F902678E35E0080D98D /* Data */,
 				E1B78CAC267792A000DD6EDB /* Preview Content */,
 			);
 			path = SmartShopping;
@@ -74,6 +86,39 @@
 				E1B78CAD267792A000DD6EDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1CE6F8F2678E3510080D98D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1CE6F972678ECA70080D98D /* AddViews */,
+				E1B78CA82677929E00DD6EDB /* ContentView.swift */,
+				E13916C82678E0A70008C8FB /* ListView.swift */,
+				E1CE6F912678E3870080D98D /* MealView.swift */,
+				E1CE6F932678E6950080D98D /* LocationView.swift */,
+				E1CE6F952678E6A10080D98D /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1CE6F902678E35E0080D98D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1B78CAA267792A000DD6EDB /* Assets.xcassets */,
+				E1B78CAF267792A000DD6EDB /* Persistence.swift */,
+				E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E1CE6F972678ECA70080D98D /* AddViews */ = {
+			isa = PBXGroup;
+			children = (
+				E1CE6F982678ECB50080D98D /* AddLocationView.swift */,
+				E1CE6F9A2678ECBF0080D98D /* AddItemView.swift */,
+				E1CE6F9C2678ECCE0080D98D /* AddMealView.swift */,
+			);
+			path = AddViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +192,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E13916C72678D46F0008C8FB /* ViewRouter.swift in Sources */,
+				E1CE6F942678E6950080D98D /* LocationView.swift in Sources */,
 				E1B78CB0267792A000DD6EDB /* Persistence.swift in Sources */,
+				E1CE6F9D2678ECCE0080D98D /* AddMealView.swift in Sources */,
+				E1CE6F962678E6A10080D98D /* SettingsView.swift in Sources */,
+				E13916C92678E0A70008C8FB /* ListView.swift in Sources */,
+				E1CE6F922678E3870080D98D /* MealView.swift in Sources */,
 				E1B78CB3267792A000DD6EDB /* SmartShopping.xcdatamodeld in Sources */,
+				E1CE6F992678ECB50080D98D /* AddLocationView.swift in Sources */,
+				E1CE6F9B2678ECC00080D98D /* AddItemView.swift in Sources */,
 				E1B78CA92677929E00DD6EDB /* ContentView.swift in Sources */,
 				E1B78CA72677929E00DD6EDB /* SmartShoppingApp.swift in Sources */,
 			);
