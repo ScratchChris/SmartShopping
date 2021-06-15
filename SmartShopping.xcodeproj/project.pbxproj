@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E13916C72678D46F0008C8FB /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13916C62678D46F0008C8FB /* ViewRouter.swift */; };
 		E1B78CA72677929E00DD6EDB /* SmartShoppingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */; };
 		E1B78CA92677929E00DD6EDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CA82677929E00DD6EDB /* ContentView.swift */; };
 		E1B78CAB267792A000DD6EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B78CAA267792A000DD6EDB /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E13916C62678D46F0008C8FB /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		E1B78CA32677929E00DD6EDB /* SmartShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShoppingApp.swift; sourceTree = "<group>"; };
 		E1B78CA82677929E00DD6EDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */,
 				E1B78CA82677929E00DD6EDB /* ContentView.swift */,
+				E13916C62678D46F0008C8FB /* ViewRouter.swift */,
 				E1B78CAA267792A000DD6EDB /* Assets.xcassets */,
 				E1B78CAF267792A000DD6EDB /* Persistence.swift */,
 				E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13916C72678D46F0008C8FB /* ViewRouter.swift in Sources */,
 				E1B78CB0267792A000DD6EDB /* Persistence.swift in Sources */,
 				E1B78CB3267792A000DD6EDB /* SmartShopping.xcdatamodeld in Sources */,
 				E1B78CA92677929E00DD6EDB /* ContentView.swift in Sources */,
