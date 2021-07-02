@@ -15,10 +15,10 @@ struct AddLocationView: View {
 	
 	@State private var locationName = ""
 	
-    var body: some View {
-			VStack {
-				Text("Use the below form to add a new kitchen location to SmartShopping")
-					.padding()
+	var body: some View {
+		VStack {
+			Text("Use the below form to add a new kitchen location to SmartShopping")
+				.padding()
 			Form {
 				TextField("Location", text: $locationName)
 				Section {
@@ -32,12 +32,12 @@ struct AddLocationView: View {
 					}
 				}
 			}
-			}
-    }
+		}
+	}
 }
 
 struct AddLocationView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddLocationView()
-    }
+	static var previews: some View {
+		AddLocationView()
+	}
 }

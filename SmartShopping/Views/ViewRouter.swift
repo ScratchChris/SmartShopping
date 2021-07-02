@@ -19,6 +19,7 @@ class ViewRouter: ObservableObject {
 enum Page {
 		 case list
 		 case meals
+		 case individualMeal
 		 case locations
 		 case settings
  }

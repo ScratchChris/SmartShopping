@@ -16,10 +16,13 @@ struct LocationView: View {
 	]) var locations: FetchedResults<Location>
 	
     var body: some View {
+			NavigationView {
 			List {
 				ForEach(locations, id: \.locationName) { location in
 					Text(location.locationName!)
 				}
+			}
+			.navigationBarTitle("Locations")
 			}
     }
 }

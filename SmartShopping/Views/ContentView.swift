@@ -10,12 +10,12 @@ import CoreData
 
 struct ContentView: View {
 	@Environment(\.managedObjectContext) var moc
-	
-	@StateObject var viewRouter: ViewRouter
+	@EnvironmentObject var viewRouter: ViewRouter
 	@State var showPopUp = false
 	@State var showAddItem = false
 	@State var showAddLocation = false
 	@State var showAddMeal = false
+	@State var showAddMealItem = false
 	
 	
 	var body: some View {
@@ -27,11 +27,13 @@ struct ContentView: View {
 								ListView()
 										.edgesIgnoringSafeArea(.bottom)
 							case .meals:
-									MealView()
+									MealView(selectedMeal: Meal())
 							case .locations:
 								 LocationView()
 							case .settings:
 									SettingsView()
+							case .individualMeal:
+									MealItemView(selectedMeal: Meal())
 							}
 						Spacer()
 							ZStack {
@@ -60,12 +62,15 @@ struct ContentView: View {
 //																	showPopUp.toggle()
 //															}
 														print("Add Button Tapped")
+														print(viewRouter.currentPage)
 														if viewRouter.currentPage == .list {
 															showAddItem.toggle()
 														} else if viewRouter.currentPage == .meals {
 															showAddMeal.toggle()
 														} else if viewRouter.currentPage == .locations {
 															showAddLocation.toggle()
+														} else if viewRouter.currentPage == .individualMeal {
+															showAddMealItem.toggle()
 														}
 
 														
@@ -78,6 +83,9 @@ struct ContentView: View {
 													}
 													.sheet(isPresented: $showAddLocation) {
 														AddLocationView()
+													}
+													.sheet(isPresented: $showAddMealItem) {
+														AddMealItemView()
 													}
 											TabBarIcon(viewRouter: viewRouter, assignedPage: .locations, width: geometry.size.width/5, height: geometry.size.height/28, systemIconName: "waveform", tabName: "Locations")
 											TabBarIcon(viewRouter: viewRouter, assignedPage: .settings, width: geometry.size.width/5, height: geometry.size.height/28, systemIconName: "person.crop.circle", tabName: "Settings")
@@ -95,7 +103,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
 	static var previews: some View {
-		ContentView(viewRouter: ViewRouter())
+		ContentView().environmentObject(ViewRouter())
 
 	}
 }

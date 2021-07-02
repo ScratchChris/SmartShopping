@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct AddMealView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+	
+	@Environment(\.managedObjectContext) var moc
+	@Environment(\.presentationMode) var presentationMode
+	
+	@State var mealName = ""
+	
+	var body: some View {
+		VStack {
+			Text("Use the below form to add a new meal to your list")
+				.padding()
+			Form {
+				TextField("Meal Name", text: $mealName)
+				
+				Section {
+					Button("Save") {
+						let newMeal = Meal(context: self.moc)
+						newMeal.mealName = self.mealName
+						newMeal.itemsInMeal = nil
+						
+						try? self.moc.save()
+						self.presentationMode.wrappedValue.dismiss()
+					}
+				}
+			}
+		}
+	}
 }
 
+
 struct AddMealView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddMealView()
-    }
+	static var previews: some View {
+		AddMealView()
+	}
 }

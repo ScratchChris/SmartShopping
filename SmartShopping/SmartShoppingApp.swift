@@ -15,8 +15,9 @@ struct SmartShoppingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(viewRouter: viewRouter)
+					ContentView().environmentObject(viewRouter)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+					
         }
     }
 }

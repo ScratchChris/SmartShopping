@@ -1,14 +1,16 @@
 //
-//  AddItemView.swift
+//  AddMealItem.swift
 //  SmartShopping
 //
-//  Created by Chris Turner on 15/06/2021.
+//  Created by Chris Turner on 28/06/2021.
 //
 
 import SwiftUI
 import CoreData
 
-struct AddItemView: View {
+struct AddMealItemView: View {
+	
+	@EnvironmentObject var viewRouter : ViewRouter
 	
 	@Environment(\.managedObjectContext) var moc
 	@Environment(\.presentationMode) var presentationMode
@@ -18,13 +20,11 @@ struct AddItemView: View {
 	]) var locations: FetchedResults<Location>
 	
 	@State var selection = Location()
-	
 	@State var itemName = ""
-	
 	
 	var body: some View {
 		VStack {
-			Text("Use the below form to add a new item to your list")
+			Text("Add Meal ITem VIEWWWWW")
 				.padding()
 			Form {
 				TextField("Item Name", text: $itemName)
@@ -44,6 +44,7 @@ struct AddItemView: View {
 					
 					try? self.moc.save()
 					self.presentationMode.wrappedValue.dismiss()
+					viewRouter.currentPage = .meals
 				}
 			}
 		}
@@ -53,13 +54,15 @@ struct AddItemView: View {
 	
 	func onAppear() {
 		print(locations.count)
+		print("Testy")
 		selection = locations[0]
+		viewRouter.currentPage = .individualMeal
 	}
 	
 }
 
 
-struct AddItemView_Previews: PreviewProvider {
+struct AddMealItemView_Previews: PreviewProvider {
 	static var previews: some View {
 		AddItemView(selection: Location())
 	}

@@ -52,5 +52,6 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+			print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
 }
