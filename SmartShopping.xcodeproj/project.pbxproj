@@ -18,6 +18,7 @@
 		E1B78CAE267792A000DD6EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B78CAD267792A000DD6EDB /* Preview Assets.xcassets */; };
 		E1B78CB0267792A000DD6EDB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CAF267792A000DD6EDB /* Persistence.swift */; };
 		E1B78CB3267792A000DD6EDB /* SmartShopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */; };
+		E1C8AF2A268F5EF1005A8064 /* CoreDataStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C8AF29268F5EF1005A8064 /* CoreDataStuff.swift */; };
 		E1CE6F922678E3870080D98D /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F912678E3870080D98D /* MealView.swift */; };
 		E1CE6F942678E6950080D98D /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F932678E6950080D98D /* LocationView.swift */; };
 		E1CE6F962678E6A10080D98D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE6F952678E6A10080D98D /* SettingsView.swift */; };
@@ -48,20 +49,21 @@
 		E1B78CAD267792A000DD6EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1B78CAF267792A000DD6EDB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E1B78CB2267792A000DD6EDB /* SmartShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartShopping.xcdatamodel; sourceTree = "<group>"; };
+		E1C8AF29268F5EF1005A8064 /* CoreDataStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStuff.swift; sourceTree = "<group>"; };
 		E1CE6F912678E3870080D98D /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
 		E1CE6F932678E6950080D98D /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E1CE6F952678E6A10080D98D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E1CE6F982678ECB50080D98D /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		E1CE6F9A2678ECBF0080D98D /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		E1CE6F9C2678ECCE0080D98D /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
-		E1CE6F9E26791E350080D98D /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6F9F26791E350080D98D /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6FA026791E350080D98D /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6FA126791E350080D98D /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6FA626791FA00080D98D /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6FA726791FA00080D98D /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6FA826791FA00080D98D /* ShoppingTrip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingTrip+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		E1CE6FA926791FA00080D98D /* ShoppingTrip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingTrip+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6F9E26791E350080D98D /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataClass.swift"; path = "SmartShopping/Location+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6F9F26791E350080D98D /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "SmartShopping/Location+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6FA026791E350080D98D /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "SmartShopping/Item+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6FA126791E350080D98D /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "SmartShopping/Item+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6FA626791FA00080D98D /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Meal+CoreDataClass.swift"; path = "SmartShopping/Meal+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6FA726791FA00080D98D /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Meal+CoreDataProperties.swift"; path = "SmartShopping/Meal+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6FA826791FA00080D98D /* ShoppingTrip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShoppingTrip+CoreDataClass.swift"; path = "SmartShopping/ShoppingTrip+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E1CE6FA926791FA00080D98D /* ShoppingTrip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShoppingTrip+CoreDataProperties.swift"; path = "SmartShopping/ShoppingTrip+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		E1CE6FAE26794A120080D98D /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,17 +109,9 @@
 		E1B78CA52677929E00DD6EDB /* SmartShopping */ = {
 			isa = PBXGroup;
 			children = (
-				E1CE6FA626791FA00080D98D /* Meal+CoreDataClass.swift */,
-				E1CE6FA726791FA00080D98D /* Meal+CoreDataProperties.swift */,
-				E1CE6FA826791FA00080D98D /* ShoppingTrip+CoreDataClass.swift */,
-				E1CE6FA926791FA00080D98D /* ShoppingTrip+CoreDataProperties.swift */,
-				E1CE6F9E26791E350080D98D /* Location+CoreDataClass.swift */,
-				E1CE6F9F26791E350080D98D /* Location+CoreDataProperties.swift */,
-				E1CE6FA026791E350080D98D /* Item+CoreDataClass.swift */,
-				E1CE6FA126791E350080D98D /* Item+CoreDataProperties.swift */,
-				E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */,
-				E1CE6F8F2678E3510080D98D /* Views */,
 				E1CE6F902678E35E0080D98D /* Data */,
+				E1C0F29226906E05005AAC78 /* CoreData */,
+				E1CE6F8F2678E3510080D98D /* Views */,
 				E1B78CAC267792A000DD6EDB /* Preview Content */,
 			);
 			path = SmartShopping;
@@ -129,6 +123,23 @@
 				E1B78CAD267792A000DD6EDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1C0F29226906E05005AAC78 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */,
+				E1C8AF29268F5EF1005A8064 /* CoreDataStuff.swift */,
+				E1CE6FA626791FA00080D98D /* Meal+CoreDataClass.swift */,
+				E1CE6FA726791FA00080D98D /* Meal+CoreDataProperties.swift */,
+				E1CE6FA826791FA00080D98D /* ShoppingTrip+CoreDataClass.swift */,
+				E1CE6FA926791FA00080D98D /* ShoppingTrip+CoreDataProperties.swift */,
+				E1CE6F9E26791E350080D98D /* Location+CoreDataClass.swift */,
+				E1CE6F9F26791E350080D98D /* Location+CoreDataProperties.swift */,
+				E1CE6FA026791E350080D98D /* Item+CoreDataClass.swift */,
+				E1CE6FA126791E350080D98D /* Item+CoreDataProperties.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		E1CE6F8F2678E3510080D98D /* Views */ = {
@@ -146,9 +157,9 @@
 		E1CE6F902678E35E0080D98D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E1B78CA62677929E00DD6EDB /* SmartShoppingApp.swift */,
 				E1B78CAA267792A000DD6EDB /* Assets.xcassets */,
 				E1B78CAF267792A000DD6EDB /* Persistence.swift */,
-				E1B78CB1267792A000DD6EDB /* SmartShopping.xcdatamodeld */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -263,6 +274,7 @@
 				E1CE6F992678ECB50080D98D /* AddLocationView.swift in Sources */,
 				E15E1E99267CE9A30068A941 /* MealCell.swift in Sources */,
 				E1CE6FAA26791FA00080D98D /* Meal+CoreDataClass.swift in Sources */,
+				E1C8AF2A268F5EF1005A8064 /* CoreDataStuff.swift in Sources */,
 				E1CE6FAB26791FA00080D98D /* Meal+CoreDataProperties.swift in Sources */,
 				E1CE6F9B2678ECC00080D98D /* AddItemView.swift in Sources */,
 				E1B78CA92677929E00DD6EDB /* ContentView.swift in Sources */,

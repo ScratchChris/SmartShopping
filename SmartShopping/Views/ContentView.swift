@@ -22,19 +22,23 @@ struct ContentView: View {
 			GeometryReader { geometry in
 					VStack {
 						Spacer()
+						if #available(iOS 15.0, *) {
 							switch viewRouter.currentPage {
-							case .list:
-								ListView()
+								case .list:
+									ListView()
 										.edgesIgnoringSafeArea(.bottom)
-							case .meals:
+								case .meals:
 									MealView(selectedMeal: Meal())
-							case .locations:
-								 LocationView()
-							case .settings:
+								case .locations:
+									LocationView()
+								case .settings:
 									SettingsView()
-							case .individualMeal:
-									MealItemView(selectedMeal: Meal())
+								case .individualMeal:
+									MealView(selectedMeal: Meal())
 							}
+						} else {
+							// Fallback on earlier versions
+						}
 						Spacer()
 							ZStack {
 									if showPopUp {

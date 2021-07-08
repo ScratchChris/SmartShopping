@@ -41,6 +41,8 @@ struct AddItemView: View {
 					let newItem = Item(context: self.moc)
 					newItem.itemName = self.itemName
 					newItem.itemLocation = self.selection
+					newItem.onShoppingList = true
+					newItem.inMeal = nil
 					
 					try? self.moc.save()
 					self.presentationMode.wrappedValue.dismiss()

@@ -36,6 +36,10 @@ struct MealCell: View {
 	func checkMeal(meal: Meal) {
 		
 		meal.mealTicked.toggle()
+		let selectedItems = meal.itemsInMeal?.allObjects as! [Item]
+		for item in selectedItems {
+			item.onShoppingList.toggle()
+		}
 		
 		try? moc.save()
 	}

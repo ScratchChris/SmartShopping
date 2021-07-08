@@ -22,9 +22,12 @@ struct ItemCell: View {
 						.foregroundColor(.yellow)
 					: Image(systemName: "n.square.fill")
 						.foregroundColor(.green)
+				
 				if item.inMeal != nil
-				{Image(systemName: "m.square.fill")
+				{
+					Image(systemName: "m.square.fill")
 					.foregroundColor(.blue)
+					
 				}
 				
 			}

@@ -12,18 +12,16 @@ struct MealItemView: View {
 	
 	
 	init(selectedMeal : Meal) {
-		self.meal = selectedMeal
+		self.selectedMeal = selectedMeal
 		self.mealRequest = FetchRequest<Item>(entity: Item.entity(), sortDescriptors: [
 			NSSortDescriptor(keyPath: \Item.itemName, ascending: true)
-	 ], predicate: NSPredicate(format : "inMeal == %@", meal))
-		
-		
+	 ], predicate: NSPredicate(format : "ANY inMeal == %@", selectedMeal))
 	}
 	
 	@Environment(\.managedObjectContext) var moc
 	@EnvironmentObject var viewRouter: ViewRouter
 	
-	var meal: Meal
+	var selectedMeal: Meal
 	var mealRequest : FetchRequest<Item>
 	var itemsInMeal:  FetchedResults<Item>{mealRequest.wrappedValue}
 	
@@ -37,13 +35,22 @@ struct MealItemView: View {
 				Text(item.itemName!)
 			}
 		}
-		.navigationBarTitle("\(meal.mealName!) Ingredients",displayMode: .inline)
+		.navigationBarTitle("\(selectedMeal.mealName!) Ingredients",displayMode: .inline)
+		.onAppear(perform: onAppear)
+	}
+	
+	func onAppear() {
+		viewRouter.selectedMeal = selectedMeal
 	}
 	
 }
 
 struct MealItemView_Previews : PreviewProvider {
 	static var previews: some View {
-		ListView()
+		if #available(iOS 15.0, *) {
+			ListView()
+		} else {
+			// Fallback on earlier versions
+		}
 	}
 }

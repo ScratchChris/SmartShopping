@@ -25,6 +25,7 @@ struct AddMealItemView: View {
 	var body: some View {
 		VStack {
 			Text("Add Meal ITem VIEWWWWW")
+			Text(viewRouter.selectedMeal!.mealName!)
 				.padding()
 			Form {
 				TextField("Item Name", text: $itemName)
@@ -35,16 +36,23 @@ struct AddMealItemView: View {
 					}
 				}
 				.pickerStyle(.wheel)
+				
 			
 			Section {
 				Button("Save") {
 					let newItem = Item(context: self.moc)
 					newItem.itemName = self.itemName
 					newItem.itemLocation = self.selection
+					newItem.addToInMeal(viewRouter.selectedMeal!)
+					if viewRouter.selectedMeal!.mealTicked == true {
+						newItem.onShoppingList = true
+					} else {
+						newItem.onShoppingList = false
+					}
 					
 					try? self.moc.save()
 					self.presentationMode.wrappedValue.dismiss()
-					viewRouter.currentPage = .meals
+//					viewRouter.currentPage = .meals
 				}
 			}
 		}

@@ -13,6 +13,7 @@ class ViewRouter: ObservableObject {
 	@Environment(\.managedObjectContext) var moc
 	 
 	@Published var currentPage: Page = .list
+	@Published var selectedMeal : Meal?
 	
 }
 

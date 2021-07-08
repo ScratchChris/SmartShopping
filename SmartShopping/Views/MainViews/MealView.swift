@@ -62,6 +62,7 @@ struct MealView: View {
 	
 	func editButtonPressed(meal: Meal) {
 		selectedMeal = meal
+		viewRouter.selectedMeal = meal
 		print(isShowingMealItemsView)
 		self.isShowingMealItemsView = true
 		print(isShowingMealItemsView)
