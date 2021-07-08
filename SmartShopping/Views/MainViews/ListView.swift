@@ -17,18 +17,12 @@ struct ListView: View {
 	])
 	var locations: FetchedResults<Location>
 
-	
-
-	
 //	@SectionedFetchRequest<Location?, Item>(
 //		sectionIdentifier: \.itemLocation?, sortDescriptors: [
 //			NSSortDescriptor(keyPath: \Item.itemName, ascending: true)
 //		], animation: .default)
 //	private var sectionedItems
-	
-	
-//	var locations: FetchedResults<Location>
-	
+		
 	var body: some View {
 		NavigationView {
 			List {
